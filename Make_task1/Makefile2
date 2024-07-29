@@ -1,0 +1,12 @@
+
+HelloWorldBinary: main.o src.o
+	gcc  main.o src.o -o HelloWorld 
+
+main.o: main.c
+	gcc main.c -c  
+
+src.o: src.c
+	gcc src.c -c
+
+clean: 
+	rm *.o HelloWorld

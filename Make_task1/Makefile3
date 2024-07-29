@@ -1,0 +1,8 @@
+# Makefile3
+OBJ = main.o src1.o
+
+main: $(OBJ)
+    gcc $^ -o $@
+
+%.o: %.c
+    gcc -c $<

@@ -1,0 +1,7 @@
+
+
+HelloWorldBinary: *.c
+	gcc  $^ -o HelloWorld 
+
+clean: 
+	rm *.o HelloWorld
